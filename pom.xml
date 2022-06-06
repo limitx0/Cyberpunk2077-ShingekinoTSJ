@@ -70,7 +70,8 @@
         <dependency>
             <groupId>eu.hansolo</groupId>
             <artifactId>tilesfx</artifactId>
-            <version>17.1.9</version>
+<!--            don't change the version of eu.hansolo -->
+            <version>11.48</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.openjfx</groupId>
