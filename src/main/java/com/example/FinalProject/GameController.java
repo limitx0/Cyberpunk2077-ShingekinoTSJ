@@ -1,14 +1,17 @@
 package com.example.FinalProject;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.GridPane;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 public class GameController {
-    public GridPane root;
-    public Button Pause;
+    @FXML private AnchorPane root;
+    @FXML private Button Pause;
 
     public GameController() {
         Thread thread = new Thread(() -> {
@@ -28,7 +31,15 @@ public class GameController {
     }
 
     public void onPauseButtonClick(ActionEvent actionEvent) {
+        final Node source = (Node) actionEvent.getSource();
+        final Stage stage = (Stage) source.getScene().getWindow();
+        stage.setScene(Main.pauseScene);
+        stage.setFullScreen(true);
 
+//        Main.pauseScene.getRoot().requestFocus();
+////        Main.currentStage.setMaximized(true);
+//        Main.currentStage.setScene(Main.pauseScene);
+//        Main.currentStage.setFullScreen(true);
     }
     public void onKeyPressed(KeyEvent key) {
         System.out.println(key.getCode());
@@ -36,5 +47,6 @@ public class GameController {
 
         }
     }
+
 
 }
