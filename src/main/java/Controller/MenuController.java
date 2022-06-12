@@ -1,4 +1,4 @@
-package com.example.FinalProject;
+package Controller;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -27,14 +27,14 @@ public class MenuController {
     public void onStartButtonClick(ActionEvent actionEvent) {
         final Node source = (Node) actionEvent.getSource();
         final Stage stage = (Stage) source.getScene().getWindow();
-        stage.setScene(Main.gameScene);
+        stage.setScene(Main.Main.gameScene);
         stage.setFullScreenExitHint("");
         stage.setFullScreen(true);
 
 
-//        Main.gameScene.getRoot().requestFocus();
-////        Main.currentStage.setMaximized(true);
-//        Main.currentStage.setScene(Main.gameScene);
-//        Main.currentStage.setFullScreen(true);
+//        Main.Main.gameScene.getRoot().requestFocus();
+////        Main.Main.currentStage.setMaximized(true);
+//        Main.Main.currentStage.setScene(Main.Main.gameScene);
+//        Main.Main.currentStage.setFullScreen(true);
     }
 }

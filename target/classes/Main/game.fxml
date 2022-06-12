@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onKeyPressed" onMouseClicked="#onMouseClicked" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" onMouseMoved="#onMouseMoved" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: Black; -fx-border-color: White; -fx-border-width: 20;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GameController">
+
+    <!--    <columnConstraints>-->
+    <!--        <ColumnConstraints hgrow="SOMETIMES" percentWidth="25.0" />-->
+    <!--        <ColumnConstraints hgrow="SOMETIMES" percentWidth="25.0" />-->
+    <!--        <ColumnConstraints hgrow="SOMETIMES" percentWidth="40.0" />-->
+    <!--      <ColumnConstraints hgrow="SOMETIMES" percentWidth="35.0" />-->
+    <!--    </columnConstraints>-->
+    <!--    <rowConstraints>-->
+    <!--      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+    <!--    </rowConstraints>-->
+
+
+    <Button fx:id="Pause" alignment="CENTER" layoutX="29.0" layoutY="30.0" onAction="#onPauseButtonClick" prefHeight="78.0" prefWidth="149.0" style="-fx-background-color: gray; -fx-border-color: blue; -fx-border-width: 5.0;" text="_Pause" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <font>
+            <Font name="Eras Bold ITC" size="32.0" />
+        </font>
+    </Button>
+
+    <Pane fx:id="gamePane" focusTraversable="true" prefHeight="1080.0" prefWidth="1920.0">
+      <children>
+         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="207.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../PoliceWang.png" />
+            </image>
+         </ImageView>
+      </children></Pane>
+
+
+
+
+</AnchorPane>

@@ -11,6 +11,9 @@ module com.example.finalproject {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
 
-    opens com.example.FinalProject to javafx.fxml;
-    exports com.example.FinalProject;
+    opens Main to javafx.fxml;
+    exports Main;
+    exports Controller;
+    opens Controller to javafx.fxml;
+    exports Object;
 }

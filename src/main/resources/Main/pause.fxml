@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane fx:id="root" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: Black; -fx-border-color: White; -fx-border-width: 20;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.PauseController">
+<GridPane fx:id="root" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: Black; -fx-border-color: White; -fx-border-width: 20;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PauseController">
 
     <!--    <columnConstraints>-->
     <!--        <ColumnConstraints hgrow="SOMETIMES" percentWidth="25.0" />-->
@@ -37,19 +37,19 @@
 
     <VBox alignment="CENTER" prefHeight="600.0" prefWidth="1000.0" spacing="20.0" GridPane.columnIndex="1">
 
-        <Button fx:id="Resume" alignment="CENTER" onAction="#onResumeButtonClick" prefHeight="100" prefWidth="200" style="-fx-background-color: gray; -fx-border-color: blue; -fx-border-width: 5.0;" text="Resume" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <Button fx:id="Resume" alignment="CENTER" onAction="#onResumeButtonClick" prefHeight="100" prefWidth="200" style="-fx-background-color: gray; -fx-border-color: blue; -fx-border-width: 5.0;" text="_Resume" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
             <font>
                 <Font name="Eras Bold ITC" size="32.0" />
             </font>
         </Button>
 
-        <Button fx:id="Menu" alignment="CENTER" onAction="#onMenuButtonClick" prefHeight="100" prefWidth="200" style="-fx-background-color: gray; -fx-border-color: blue; -fx-border-width: 5.0;" text="Menu" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <Button fx:id="Menu" alignment="CENTER" onAction="#onMenuButtonClick" prefHeight="100" prefWidth="200" style="-fx-background-color: gray; -fx-border-color: blue; -fx-border-width: 5.0;" text="_Menu" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
             <font>
                 <Font name="Eras Bold ITC" size="32.0" />
             </font>
         </Button>
 
-        <Button fx:id="Leave" alignment="CENTER" onAction="#onLeaveButtonClick" prefHeight="100" prefWidth="200" style="-fx-background-color: gray; -fx-border-color: blue; -fx-border-width: 5.0;" text="Leave" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <Button fx:id="Leave" alignment="CENTER" onAction="#onLeaveButtonClick" prefHeight="100" prefWidth="200" style="-fx-background-color: gray; -fx-border-color: blue; -fx-border-width: 5.0;" text="_Leave" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
             <font>
                 <Font name="Eras Bold ITC" size="32.0" />
             </font>

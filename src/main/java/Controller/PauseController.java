@@ -1,4 +1,5 @@
-package com.example.FinalProject;
+package Controller;
+
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -19,25 +20,25 @@ public class PauseController {
     public void onMenuButtonClick(ActionEvent actionEvent) {
         final Node source = (Node) actionEvent.getSource();
         final Stage stage = (Stage) source.getScene().getWindow();
-        stage.setScene(Main.menuScene);
+        stage.setScene(Main.Main.menuScene);
         stage.setFullScreen(true);
 
-//        Main.menuScene.getRoot().requestFocus();
-////        Main.currentStage.setMaximized(true);
-//        Main.currentStage.setScene(Main.menuScene);
-//        Main.currentStage.setFullScreen(true);
+//        Main.Main.menuScene.getRoot().requestFocus();
+////        Main.Main.currentStage.setMaximized(true);
+//        Main.Main.currentStage.setScene(Main.Main.menuScene);
+//        Main.Main.currentStage.setFullScreen(true);
     }
 
     public void onResumeButtonClick(ActionEvent actionEvent) {
         final Node source = (Node) actionEvent.getSource();
         final Stage stage = (Stage) source.getScene().getWindow();
-        stage.setScene(Main.gameScene);
+        stage.setScene(Main.Main.gameScene);
         stage.setFullScreen(true);
 
-//        Main.gameScene.getRoot().requestFocus();
-////        Main.currentStage.setMaximized(true);
-//        Main.currentStage.setScene(Main.gameScene);
-//        Main.currentStage.setFullScreen(true);
+//        Main.Main.gameScene.getRoot().requestFocus();
+////        Main.Main.currentStage.setMaximized(true);
+//        Main.Main.currentStage.setScene(Main.Main.gameScene);
+//        Main.Main.currentStage.setFullScreen(true);
     }
 
     public void onLeaveButtonClick(ActionEvent actionEvent) {
